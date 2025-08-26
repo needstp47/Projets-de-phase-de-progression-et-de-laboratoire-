@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAress Soubre - Gestion Hôtelière</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <!-- en-tête amélioré -->
+    <header>
+        <!-- barre de navigation -->
+        <nav class="nav-bar container">
+            <!-- groupe du logo -->
+            <div class="logo-groupe">
+                <!-- logo  -->
+                <img class="logo" src="image/Logo.jpg" alt="logo CAres soubre">
+                <!-- Titre -->
+                <div class="groupe-titre">
+                    <h1>
+                        CAress Soubre
+                    </h1>
+                    <p>Gestion intuitive pour hôtels modernes</p>
+                </div>
+            </div>
+
+            <!-- Liens de navigations -->
+            <div class="liens">
+                <button class="home active"><i class="fas fa-home"></i> Accueil</button>
+                <button class="chambres"><i class="fas fa-bed"></i> Chambres</button>
+                <button class="reserv"><i class="fas fa-calendar-check"></i> Réservations</button>
+                <button class="clients"><i class="fas fa-users"></i> Clients</button>
+                <button class="paiement"><i class="fas fa-credit-card"></i> Paiements</button>
+                <button class="contacts"><i class="fas fa-envelope"></i> Contact</button>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page d'accueil améliorée -->
+        <div class="home_page page visible">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>BIENVENUE À CARESS SOUBRE</h1>
+                    <p>Découvrez l'excellence hôtelière au cœur de la Côte d'Ivoire</p>
+                    <div>
+                        <button class="hero-btn">Réserver maintenant</button>
+                        <button class="hero-btn outline">Découvrir nos services</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section de fonctionnalités -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Nos services exclusifs</h2>
+                    <div class="feature-cards">
+                        <div class="feature-card animate">
+                            <div class="feature-icon">
+                                <i class="fas fa-concierge-bell"></i>
+                            </div>
+                            <h3>Service Premium</h3>
+                            <p>Un personnel dévoué à votre service 24h/24 pour rendre votre séjour inoubliable.</p>
+                        </div>
+                        <div class="feature-card animate">
+                            <div class="feature-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>Wi-Fi Haut Débit</h3>
+                            <p>Connection internet ultra-rapide disponible dans tout l'établissement.</p>
+                        </div>
+                        <div class="feature-card animate">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Restauration</h3>
+                            <p>Une cuisine raffinée proposant des spécialités locales et internationales.</p>
+                        </div>
+                        <div class="feature-card animate">
+                            <div class="feature-icon">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <h3>Piscine & Spa</h3>
+                            <p>Espace détente avec piscine et services de spa pour une relaxation totale.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Galerie des espaces -->
+            <section class="container">
+                <h2 class="section-title">Galerie des espaces</h2>
+                <div class="cards">
+                    <div class="card animate">
+                        <div class="card-badge">Populaire</div>
+                        <img src="image/chambre Standar.jpg" alt="Chambre standard" class="card-img">
+                        <div class="card-content">
+                            <h2>Chambre standard</h2>
+                            <h3>120 000 FCFA/nuit</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card animate">
+                        <img src="image/soiree.jpg" alt="Espace soirée" class="card-img">
+                        <div class="card-content">
+                            <h2>Soirée</h2>
+                            <h3>12 050 FCFA/nuit</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card animate">
+                        <img src="image/chambre.jpg" alt="Chambre classique" class="card-img">
+                        <div class="card-content">
+                            <h2>Chambre</h2>
+                            <h3>12 000 FCFA/nuit</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card animate">
+                        <img src="image/Salle.jpg" alt="Espace événementiel" class="card-img">
+                        <div class="card-content">
+                            <h2>Restauration</h2>
+                            <h3>2000 - 50 000 FCFA</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card animate">
+                        <div class="card-badge">Luxe</div>
+                        <img src="image/suite.jpg" alt="Suite de luxe" class="card-img">
+                        <div class="card-content">
+                            <h2>Suite de Luxe</h2>
+                            <h3>40 000 FCFA/nuit</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                    <div class="card animate">
+                        <img src="image/Mariage.jpg" alt="Salle de mariage" class="card-img">
+                        <div class="card-content">
+                            <h2>Salle de Mariage</h2>
+                            <h3>10 000 FCFA</h3>
+                            <button>Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Témoignages -->
+            <section class="testimonials">
+                <div class="container">
+                    <h2 class="section-title">Ce que disent nos clients</h2>
+                    <div class="testimonial-slider">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"Un séjour exceptionnel ! Le service était impeccable et la chambre spacieuse et confortable. Je recommande vivement cet hôtel."</p>
+                            <p class="testimonial-author">- Marie K., Abidjan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page des chambres -->
+        <div class="chambres_body page">
+            <section class="container">
+                <h2 class="section-title">Nos Chambres et Espaces</h2>
+                
+                <div class="room-details animate">
+                    <div class="room-image">
+                        <img src="image/chambre Standar.jpg" alt="Chambre Standard" class="card-img">
+                    </div>
+                    <div class="room-info">
+                        <h2>Chambre Standard</h2>
+                        <h3>120 000 FCFA/nuit</h3>
+                        <p>Notre chambre standard offre tout le confort nécessaire pour un séjour agréable. Idéale pour les voyageurs individuels ou les couples.</p>
+                        
+                        <div class="amenities">
+                            <div class="amenity">
+                                <i class="fas fa-wifi"></i>
+                                <span>Wi-Fi gratuit</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-tv"></i>
+                                <span>Télévision</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-snowflake"></i>
+                                <span>Climatisation</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-bath"></i>
+                                <span>Salle de bain privée</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn">Réserver maintenant</button>
+                    </div>
+                </div>
+                
+                <div class="room-details animate">
+                    <div class="room-image">
+                        <img src="image/suite.jpg" alt="Suite de Luxe" class="card-img">
+                    </div>
+                    <div class="room-info">
+                        <h2>Suite de Luxe</h2>
+                        <h3>40 000 FCFA/nuit</h3>
+                        <p>Notre suite de luxe offre un espace généreux et des équipements premium pour un séjour exceptionnel. Parfaite pour des occasions spéciales.</p>
+                        
+                        <div class="amenities">
+                            <div class="amenity">
+                                <i class="fas fa-wifi"></i>
+                                <span>Wi-Fi haute vitesse</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-tv"></i>
+                                <span>TV écran plat</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-snowflake"></i>
+                                <span>Climatisation</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-bath"></i>
+                                <span>Salle de bain avec baignoire</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-coffee"></i>
+                                <span>Machine à café</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-couch"></i>
+                                <span>Espace salon</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn">Réserver maintenant</button>
+                    </div>
+                </div>
+                
+                <div class="room-details animate">
+                    <div class="room-image">
+                        <img src="image/Mariage.jpg" alt="Salle de Mariage" class="card-img">
+                    </div>
+                    <div class="room-info">
+                        <h2>Salle de Mariage</h2>
+                        <h3>10 000 FCFA</h3>
+                        <p>Notre salle de mariage peut accueillir jusqu'à 200 personnes. Un espace élégant et modulable pour célébrer votre union dans les meilleures conditions.</p>
+                        
+                        <div class="amenities">
+                            <div class="amenity">
+                                <i class="fas fa-utensils"></i>
+                                <span>Service traiteur disponible</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-music"></i>
+                                <span>Système sonore</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Éclairage d'ambiance</span>
+                            </div>
+                            <div class="amenity">
+                                <i class="fas fa-expand"></i>
+                                <span>Espace modulable</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn">Réserver maintenant</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page des réservations -->
+        <div class="reservations page">
+            <section class="container">
+                <h2 class="section-title">Réserver votre séjour</h2>
+                
+                <div class="reservation-form animate">
+                    <h3>Formulaire de réservation</h3>
+                    <form id="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom complet</label>
+                                <input type="text" id="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" id="telephone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="type-chambre">Type de chambre/espace</label>
+                                <select id="type-chambre" required>
+                                    <option value="">Sélectionnez une option</option>
+                                    <option value="chambre-standard">Chambre Standard - 120 000 FCFA/nuit</option>
+                                    <option value="chambre-classique">Chambre Classique - 12 000 FCFA/nuit</option>
+                                    <option value="suite-luxe">Suite de Luxe - 40 000 FCFA/nuit</option>
+                                    <option value="salle-mariage">Salle de Mariage - 10 000 FCFA</option>
+                                    <option value="espace-soiree">Espace Soirée - 12 050 FCFA</option>
+                                    <option value="espace-evenement">Espace Événementiel - 34 000 FCFA</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date-arrivee">Date d'arrivée</label>
+                                <input type="date" id="date-arrivee" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-depart">Date de départ</label>
+                                <input type="date" id="date-depart" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adultes">Nombre d'adultes</label>
+                                <input type="number" id="adultes" min="1" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="enfants">Nombre d'enfants</label>
+                                <input type="number" id="enfants" min="0" value="0">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="commentaires">Demandes spéciales</label>
+                            <textarea id="commentaires" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Réserver maintenant</button>
+                    </form>
+                </div>
+                
+                <div class="card_c animate">
+                    <h3>Réservations récentes</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Référence</th>
+                                    <th>Client</th>
+                                    <th>Chambre</th>
+                                    <th>Dates</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>RES-2023-001</td>
+                                    <td>Kouadio Jean</td>
+                                    <td>Suite de Luxe</td>
+                                    <td>15/10/2023 - 18/10/2023</td>
+                                    <td><span class="status confirmed">Confirmée</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>RES-2023-002</td>
+                                    <td>Traore Awa</td>
+                                    <td>Chambre Standard</td>
+                                    <td>20/10/2023 - 22/10/2023</td>
+                                    <td><span class="status pending">En attente</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>RES-2023-003</td>
+                                    <td>Diallo Mohamed</td>
+                                    <td>Salle de Mariage</td>
+                                    <td>05/11/2023</td>
+                                    <td><span class="status confirmed">Confirmée</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page des clients -->
+        <div class="client_page page">
+            <section class="container">
+                <h2 class="section-title">Gestion des Clients</h2>
+                
+                <div class="card_c animate">
+                    <h3>Liste des Clients</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nom complet</th>
+                                    <th>Téléphone</th>
+                                    <th>Email</th>
+                                    <th>Nombre de séjours</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CLT-001</td>
+                                    <td>Kouadio Jean</td>
+                                    <td>+225 070203</td>
+                                    <td>kouadio.jean@alll.com</td>
+                                    <td>3</td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLT-002</td>
+                                    <td>Traore Awa</td>
+                                    <td>+225 050403</td>
+                                    <td>traore.awa@alll.com</td>
+                                    <td>2</td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLT-003</td>
+                                    <td>Diallo Mohamed</td>
+                                    <td>+225 010203</td>
+                                    <td>diallo.mohamed@alll.com</td>
+                                    <td>1</td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLT-004</td>
+                                    <td>Yao Affoue</td>
+                                    <td>+225 070707</td>
+                                    <td>yao.affoue@alll.com</td>
+                                    <td>5</td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="reservation-form animate">
+                    <h3>Ajouter un nouveau client</h3>
+                    <form id="client-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-nom">Nom</label>
+                                <input type="text" id="client-nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-prenom">Prénom</label>
+                                <input type="text" id="client-prenom" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-telephone">Téléphone</label>
+                                <input type="tel" id="client-telephone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-email">Email</label>
+                                <input type="email" id="client-email">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-adresse">Adresse</label>
+                                <textarea id="client-adresse" rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Enregistrer le client</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page des paiements -->
+        <div class="paiement_page page">
+            <section class="container">
+                <h2 class="section-title">Gestion des Paiements</h2>
+                
+                <div class="card_c animate">
+                    <h3>Historique des Paiements</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Référence</th>
+                                    <th>Client</th>
+                                    <th>Réservation</th>
+                                    <th>Montant</th>
+                                    <th>Date</th>
+                                    <th>Méthode</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PAY-2023-001</td>
+                                    <td>Kouadio Jean</td>
+                                    <td>RES-2023-001</td>
+                                    <td>120 000 FCFA</td>
+                                    <td>10/10/2023</td>
+                                    <td>Carte bancaire</td>
+                                    <td><span class="status paid">Payé</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PAY-2023-002</td>
+                                    <td>Traore Awa</td>
+                                    <td>RES-2023-002</td>
+                                    <td>60 000 FCFA</td>
+                                    <td>18/10/2023</td>
+                                    <td>Espèces</td>
+                                    <td><span class="status paid">Payé</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PAY-2023-003</td>
+                                    <td>Diallo Mohamed</td>
+                                    <td>RES-2023-003</td>
+                                    <td>10 000 FCFA</td>
+                                    <td>01/11/2023</td>
+                                    <td>Mobile Money</td>
+                                    <td><span class="status pending-payment">En attente</span></td>
+                                    <td>
+                                        <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button class="table-btn delete"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="reservation-form animate">
+                    <h3>Enregistrer un paiement</h3>
+                    <form id="paiement-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="paiement-reservation">Réservation</label>
+                                <select id="paiement-reservation" required>
+                                    <option value="">Sélectionnez une réservation</option>
+                                    <option value="RES-2023-001">RES-2023-001 (Kouadio Jean)</option>
+                                    <option value="RES-2023-002">RES-2023-002 (Traore Awa)</option>
+                                    <option value="RES-2023-003">RES-2023-003 (Diallo Mohamed)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paiement-montant">Montant (FCFA)</label>
+                                <input type="number" id="paiement-montant" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="paiement-methode">Méthode de paiement</label>
+                                <select id="paiement-methode" required>
+                                    <option value="">Sélectionnez une méthode</option>
+                                    <option value="carte">Carte bancaire</option>
+                                    <option value="especes">Espèces</option>
+                                    <option value="mobile">Mobile Money</option>
+                                    <option value="virement">Virement bancaire</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paiement-date">Date</label>
+                                <input type="date" id="paiement-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="paiement-notes">Notes</label>
+                            <textarea id="paiement-notes" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Enregistrer le paiement</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page de contact -->
+        <div class="contact_page page">
+            <section class="container">
+                <h2 class="section-title">Contactez-nous</h2>
+                
+                <div class="cards">
+                    <div class="card animate">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h2>Adresse</h2>
+                            <p>Soubré, Côte d'Ivoire</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card animate">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h2>Téléphone</h2>
+                            <p>+225 275689</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card animate">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h2>Email</h2>
+                            <p>hotelcaress@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservation-form animate">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-nom">Nom complet</label>
+                                <input type="text" id="contact-nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Adresse email</label>
+                                <input type="email" id="contact-email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-sujet">Sujet</label>
+                                <input type="text" id="contact-sujet" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-block">Envoyer le message</button>
+                    </form>
+                </div>
+                
+                <div class="card_c animate">
+                    <h3>Nos horaires d'ouverture</h3>
+                    <div class="list">
+                        <li><strong>Réception</strong>: 24h/24 et 7j/7</li>
+                        <li><strong>Service de chambre</strong>: 6h - 23h</li>
+                        <li><strong>Petit-déjeuner</strong>: 6h30 - 10h30</li>
+                        <li><strong>Déjeuner</strong>: 12h - 15h</li>
+                        <li><strong>Dîner</strong>: 19h - 22h30</li>
+                        <li><strong>Piscine</strong>: 8h - 20h</li>
+                        <li><strong>Spa</strong>: 9h - 20h (sur rendez-vous)</li>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pied de page amélioré -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>À propos de nous</h3>
+                    <p>CAress Soubre offre une expérience hôtelière exceptionnelle alliant confort moderne et chaleur ivoirienne.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Chambres</a></li>
+                        <li><a href="#">Réservations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contactez-nous</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Soubré, Côte d'Ivoire</p>
+                    <p><i class="fas fa-phone"></i> +225 275689</p>
+                    <p><i class="fas fa-envelope"></i> hotelcaress@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="https://web.facebook.com/profile.php?id=100092515481447"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="muted">© <span id="year">2023</span> CAress Soubre — Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
